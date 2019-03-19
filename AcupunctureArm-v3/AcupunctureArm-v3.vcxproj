@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61F3A8A2-5DCA-4147-AEF5-9480A077E365}</ProjectGuid>
+    <RootNamespace>AcupunctureArmv3</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartAxis.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartAxisLabel.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartBalloonLabel.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartBarSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCandlestickSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCrossHairCursor.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCtrl.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCursor.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartDateTimeAxis.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartDragLineCursor.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartFont.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartGanttSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartGradient.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartGrid.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLabel.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLegend.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLineSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLogarithmicAxis.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartMouseListener.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartPointsArray.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartPointsSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartScrollBar.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSerieBase.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSeriesMouseListener.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartStandardAxis.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartString.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSurfaceSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartTitle.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartXYSerie.h" />
+    <ClInclude Include="..\AcupunctureArm\ChartClass\PointsOrdering.h" />
+    <ClInclude Include="..\AcupunctureArm\Read3d\basicRead.h" />
+    <ClInclude Include="..\AcupunctureArm\Read3d\glStructures.h" />
+    <ClInclude Include="..\AcupunctureArm\Read3d\ModelLoader.h" />
+    <ClInclude Include="..\AcupunctureArm\Read3d\TriList.h" />
+    <ClInclude Include="..\AcupunctureArm\Read3d\TriObject.h" />
+    <ClInclude Include="AcupunctureArm-v3.h" />
+    <ClInclude Include="AcupunctureArm-v3Doc.h" />
+    <ClInclude Include="AcupunctureArm-v3View.h" />
+    <ClInclude Include="CalibrationDlg.h" />
+    <ClInclude Include="ConnectDlg.h" />
+    <ClInclude Include="ExportChoose.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="InfomationDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UIThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartAxis.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartAxisLabel.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartBarSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCtrl.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCursor.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartDragLineCursor.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartFont.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartGanttSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartGradient.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartGrid.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartLegend.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartLineSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartPointsSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartScrollBar.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartStandardAxis.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartTitle.cpp" />
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartXYSerie.cpp" />
+    <ClCompile Include="..\AcupunctureArm\Read3d\ModelLoader.cpp" />
+    <ClCompile Include="..\AcupunctureArm\Read3d\TriList.cpp" />
+    <ClCompile Include="..\AcupunctureArm\Read3d\TriObject.cpp" />
+    <ClCompile Include="AcupunctureArm-v3.cpp" />
+    <ClCompile Include="AcupunctureArm-v3Doc.cpp" />
+    <ClCompile Include="AcupunctureArm-v3View.cpp" />
+    <ClCompile Include="CalibrationDlg.cpp" />
+    <ClCompile Include="ConnectDlg.cpp" />
+    <ClCompile Include="ExportChoose.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="InfomationDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UIThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AcupunctureArm-v3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\AcupunctureArm\ChartClass\ChartBalloonLabel.inl" />
+    <None Include="..\AcupunctureArm\ChartClass\ChartLabel.inl" />
+    <None Include="..\AcupunctureArm\ChartClass\ChartPointsArray.inl" />
+    <None Include="..\AcupunctureArm\ChartClass\ChartSerieBase.inl" />
+    <None Include="res\AcupunctureArmv3.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AcupunctureArm-v3.ico" />
+    <Image Include="res\AcupunctureArm-v3Doc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AcupunctureArm-v3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

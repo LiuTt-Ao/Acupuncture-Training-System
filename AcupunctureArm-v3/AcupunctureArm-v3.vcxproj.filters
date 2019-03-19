@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ChartClass">
+      <UniqueIdentifier>{9c5b6109-4c51-4020-92e6-1b6dd73b71ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Read3d">
+      <UniqueIdentifier>{daf34d48-2fe3-4d3e-991c-82302785989b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AcupunctureArm-v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AcupunctureArm-v3Doc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AcupunctureArm-v3View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartAxisLabel.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartBalloonLabel.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartBarSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCandlestickSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCrossHairCursor.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCtrl.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartCursor.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartDateTimeAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartDragLineCursor.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartFont.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartGanttSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartGradient.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartGrid.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLabel.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLegend.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLineSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartLogarithmicAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartMouseListener.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartPointsArray.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartPointsSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartScrollBar.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSerieBase.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSeriesMouseListener.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartStandardAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartString.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartSurfaceSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartTitle.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\ChartXYSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\ChartClass\PointsOrdering.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\Read3d\basicRead.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\Read3d\glStructures.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\Read3d\ModelLoader.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\Read3d\TriList.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AcupunctureArm\Read3d\TriObject.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrationDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfomationDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportChoose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AcupunctureArm-v3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AcupunctureArm-v3Doc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AcupunctureArm-v3View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartAxisLabel.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartBarSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCandlestickSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCrossHairCursor.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCtrl.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartCursor.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartDateTimeAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartDragLineCursor.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartFont.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartGanttSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartGradient.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartGrid.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartLegend.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartLineSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartLogarithmicAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartPointsSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartScrollBar.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartStandardAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartSurfaceSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartTitle.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\ChartClass\ChartXYSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\Read3d\ModelLoader.cpp">
+      <Filter>Read3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\Read3d\TriList.cpp">
+      <Filter>Read3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AcupunctureArm\Read3d\TriObject.cpp">
+      <Filter>Read3d</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrationDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfomationDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportChoose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AcupunctureArm-v3.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AcupunctureArmv3.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\AcupunctureArm\ChartClass\ChartBalloonLabel.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+    <None Include="..\AcupunctureArm\ChartClass\ChartLabel.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+    <None Include="..\AcupunctureArm\ChartClass\ChartPointsArray.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+    <None Include="..\AcupunctureArm\ChartClass\ChartSerieBase.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AcupunctureArm-v3Doc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AcupunctureArm-v3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
