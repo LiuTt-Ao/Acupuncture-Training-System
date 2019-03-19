@@ -1,12 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AcupunctureArm", "AcupunctureArm\AcupunctureArm.vcxproj", "{0E22F94A-14D2-4C62-A6CD-69BE08E3CC90}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AcupunctureArm-v2", "AcupunctureArm-v2\AcupunctureArm-v2.vcxproj", "{CA20701A-2998-4600-AE45-0C786E840D51}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AcupunctureArm-v3", "AcupunctureArm-v3\AcupunctureArm-v3.vcxproj", "{61F3A8A2-5DCA-4147-AEF5-9480A077E365}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TcpIp", "TcpIp\TcpIp.vcxproj", "{96BF5399-0E18-4097-BE42-805F7855AE0A}"
@@ -17,14 +13,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0E22F94A-14D2-4C62-A6CD-69BE08E3CC90}.Debug|Win32.ActiveCfg = Debug|Win32
-		{0E22F94A-14D2-4C62-A6CD-69BE08E3CC90}.Debug|Win32.Build.0 = Debug|Win32
-		{0E22F94A-14D2-4C62-A6CD-69BE08E3CC90}.Release|Win32.ActiveCfg = Release|Win32
-		{0E22F94A-14D2-4C62-A6CD-69BE08E3CC90}.Release|Win32.Build.0 = Release|Win32
-		{CA20701A-2998-4600-AE45-0C786E840D51}.Debug|Win32.ActiveCfg = Debug|Win32
-		{CA20701A-2998-4600-AE45-0C786E840D51}.Debug|Win32.Build.0 = Debug|Win32
-		{CA20701A-2998-4600-AE45-0C786E840D51}.Release|Win32.ActiveCfg = Release|Win32
-		{CA20701A-2998-4600-AE45-0C786E840D51}.Release|Win32.Build.0 = Release|Win32
 		{61F3A8A2-5DCA-4147-AEF5-9480A077E365}.Debug|Win32.ActiveCfg = Debug|Win32
 		{61F3A8A2-5DCA-4147-AEF5-9480A077E365}.Debug|Win32.Build.0 = Debug|Win32
 		{61F3A8A2-5DCA-4147-AEF5-9480A077E365}.Release|Win32.ActiveCfg = Release|Win32
@@ -36,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {075DA8A2-6B0A-467C-9233-618B8B251DA1}
 	EndGlobalSection
 EndGlobal
