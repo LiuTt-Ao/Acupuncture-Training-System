@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ChartClass">
+      <UniqueIdentifier>{dc170528-b2ae-425d-91bb-f223bdf0c805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Read3d">
+      <UniqueIdentifier>{8b93b185-472e-4914-8c6a-a9fe5ef07c94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AcupunctureArm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AcupunctureArmDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AcupunctureArmView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartAxisLabel.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartBalloonLabel.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartBarSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCandlestickSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCrossHairCursor.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCtrl.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCursor.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartDateTimeAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartDragLineCursor.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartFont.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGanttSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGradient.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGrid.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLabel.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLegend.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLineSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLogarithmicAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartMouseListener.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartPointsArray.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartPointsSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartScrollBar.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSerieBase.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSeriesMouseListener.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartStandardAxis.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartString.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSurfaceSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartTitle.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartXYSerie.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\PointsOrdering.h">
+      <Filter>ChartClass</Filter>
+    </ClInclude>
+    <ClInclude Include="mscomm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Read3d\TriList.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Read3d\TriObject.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Read3d\glStructures.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Read3d\ModelLoader.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+    <ClInclude Include="Read3d\basicRead.h">
+      <Filter>Read3d</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AcupunctureArm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AcupunctureArmDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AcupunctureArmView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartAxisLabel.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartBarSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCandlestickSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCrossHairCursor.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCtrl.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCursor.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartDateTimeAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartDragLineCursor.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartFont.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGanttSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGradient.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGrid.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLegend.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLineSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLogarithmicAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartPointsSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartScrollBar.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartStandardAxis.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartSurfaceSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartTitle.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartXYSerie.cpp">
+      <Filter>ChartClass</Filter>
+    </ClCompile>
+    <ClCompile Include="mscomm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Read3d\TriList.cpp">
+      <Filter>Read3d</Filter>
+    </ClCompile>
+    <ClCompile Include="Read3d\TriObject.cpp">
+      <Filter>Read3d</Filter>
+    </ClCompile>
+    <ClCompile Include="Read3d\ModelLoader.cpp">
+      <Filter>Read3d</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AcupunctureArm.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\file_view.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\class_view.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\class_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fileview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fileview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\classview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AcupunctureArmDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\AcupunctureArm.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AcupunctureArm.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ChartClass\ChartBalloonLabel.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+    <None Include="ChartClass\ChartLabel.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+    <None Include="ChartClass\ChartPointsArray.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+    <None Include="ChartClass\ChartSerieBase.inl">
+      <Filter>ChartClass</Filter>
+    </None>
+  </ItemGroup>
+</Project>

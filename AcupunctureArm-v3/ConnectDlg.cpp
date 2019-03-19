@@ -118,6 +118,8 @@ UINT recv_thd(LPVOID p)
 	CString dataStr[5];
 	double offset[5] = { 0.0 };
 	double slide_filter_data[5][5] = { 0.0 };
+
+	//double force_arr[5][2] = {0.0};
 	double force_data[5][3] = { 0.0 };
 	double vel_data[5][2] = { 0.0 };
 	while (1)
@@ -180,12 +182,12 @@ UINT recv_thd(LPVOID p)
 
 					for (int k = 0; k < 5; k++)
 					{
+
 						force_data[k][0] = force_data[k][1];
 						force_data[k][1] = force_data[k][2];
 						force_data[k][2] = CGlobal::force[k];
 
-						vel_data[k][0] = (force_data[k][1] - force_data[k][0]) / (CGlobal::interval / 1000.0);
-						vel_data[k][1] = (force_data[k][2] - force_data[k][1]) / (CGlobal::interval / 1000.0);
+						
 
 						CGlobal::velocity[k] = vel_data[k][0] ;
 						CGlobal::velocity2[k] = vel_data[k][1] ;

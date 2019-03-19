@@ -32,5 +32,12 @@ public:
 	static double kalman_p;  // 估计误差协方差
 	static double kalman_gain;//卡尔曼增益
 	/****************************/
+
+
+	/*******神经网络算法相关********/
+	double* recognize(double *p);
+	
+	/****************************/
+
 };
 

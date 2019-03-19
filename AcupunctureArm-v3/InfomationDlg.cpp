@@ -134,8 +134,10 @@ void CInfomationDlg::OnTimer(UINT_PTR nIDEvent)
 	{
 		GetDlgItem(IDC_ACUPOINT_NAME)->SetWindowTextW(L"ÒõÛ§Ñ¨");
 		GetDlgItem(IDC_DESCRIPTION)->SetWindowTextW(str[0][0] + str[0][1] + str[0][2]);
+
 	}
-		if ((CGlobal::force[0] > 20.0) && (CGlobal::velocity[0] > 50.0))
+	
+	    if ((CGlobal::force[0] > 20.0) && (CGlobal::velocity[0] > 50.0))
 		{
 			((CButton *)GetDlgItem(IDC_RADIO_DOWN))->SetCheck(TRUE);
 			((CButton *)GetDlgItem(IDC_RADIO_UP))->SetCheck(FALSE);
