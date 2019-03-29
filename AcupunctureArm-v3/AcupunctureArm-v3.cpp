@@ -61,7 +61,6 @@ CAcupunctureArmv3App::CAcupunctureArmv3App()
 
 CAcupunctureArmv3App theApp;
 
-
 // CAcupunctureArmv3App initialization
 
 BOOL CAcupunctureArmv3App::InitInstance()

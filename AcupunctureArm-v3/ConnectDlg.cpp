@@ -190,7 +190,6 @@ UINT recv_thd(LPVOID p)
 						CGlobal::velocity[k] = (vel_data[k][0] + vel_data[k][1]) / 2.0;
 						CGlobal::acceleration[k] = (vel_data[k][1] - vel_data[k][0]) / (CGlobal::interval / 1000.0);
 					}
-
 					CGlobal::calibrated = FALSE;
 					js = 0;
 				}
@@ -198,12 +197,9 @@ UINT recv_thd(LPVOID p)
 				else
 				{
 					js = 0;
-				}
-				
-			}
-	        		
+				}	
+			}  		
 		}
-
 	}
 	closesocket(sock);
 	return 0;

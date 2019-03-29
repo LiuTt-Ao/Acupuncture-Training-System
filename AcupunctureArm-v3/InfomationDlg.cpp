@@ -121,7 +121,6 @@ BOOL CInfomationDlg::OnInitDialog()
 //	GetDlgItem(IDC_DESCRIPTION)->SetWindowTextW(str1 + str2 + str3);
 
 //	SetTimer(0, 100, NULL);
-
 	for (int i = 0; i < 5; i++)
 	{
 		for (int j = 0; j < 2; j++)
@@ -231,7 +230,6 @@ double* CInfomationDlg::recognize(double *p)
 	}
 	return result;
 }
-
 
 void CInfomationDlg::OnTimer(UINT_PTR nIDEvent)
 {
@@ -490,7 +488,6 @@ void CInfomationDlg::OnTimer(UINT_PTR nIDEvent)
 	time = time + 0.1;
 	CDialogEx::OnTimer(nIDEvent);
 }
-
 
 void CInfomationDlg::OnBnClickedButtonStop()
 {

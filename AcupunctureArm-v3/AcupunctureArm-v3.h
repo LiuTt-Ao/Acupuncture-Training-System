@@ -10,7 +10,6 @@
 #include "resource.h"       // main symbols
 #include "UIThread.h"
 
-
 // CAcupunctureArmv3App:
 // See AcupunctureArm-v3.cpp for the implementation of this class
 //

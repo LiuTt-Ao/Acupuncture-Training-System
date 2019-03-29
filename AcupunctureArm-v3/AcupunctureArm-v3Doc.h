@@ -5,7 +5,6 @@
 
 #pragma once
 
-
 class CAcupunctureArmv3Doc : public CDocument
 {
 protected: // create from serialization only

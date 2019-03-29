@@ -16,7 +16,6 @@
 #define new DEBUG_NEW
 #endif
 
-
 // CAcupunctureArmv3View
 
 IMPLEMENT_DYNCREATE(CAcupunctureArmv3View, CView)

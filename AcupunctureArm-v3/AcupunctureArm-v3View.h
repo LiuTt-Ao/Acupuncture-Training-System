@@ -7,7 +7,6 @@
 #include "Read3d\TriObject.h"
 #include "Read3d\ModelLoader.h"
 
-
 class CAcupunctureArmv3View : public CView
 {
 protected: // create from serialization only

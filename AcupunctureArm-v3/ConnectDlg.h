@@ -23,6 +23,4 @@ public:
 	afx_msg void OnBnClickedButtonConnect();
 	virtual BOOL OnInitDialog();
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
-
-
 };

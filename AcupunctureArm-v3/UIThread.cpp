@@ -5,7 +5,6 @@
 #include "AcupunctureArm-v3.h"
 #include "UIThread.h"
 
-
 // CUIThread
 
 IMPLEMENT_DYNCREATE(CUIThread, CWinThread)

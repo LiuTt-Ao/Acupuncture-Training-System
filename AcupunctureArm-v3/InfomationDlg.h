@@ -30,6 +30,7 @@ public:
 	CString str[5][3];
 
 	double n_data[5][2];
+
 	//神经网络输入数组
 	double arr_force0[6];
 	double arr_force1[6];

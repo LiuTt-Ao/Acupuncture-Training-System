@@ -23,7 +23,6 @@ double CGlobal::kalman_r = 0.0;
 double CGlobal::kalman_p = 0.0;
 double CGlobal::kalman_gain = 0.0;
 
-
 CGlobal::CGlobal()
 {
 }

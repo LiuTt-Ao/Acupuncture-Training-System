@@ -135,5 +135,4 @@ void CAcupunctureArmv3Doc::Dump(CDumpContext& dc) const
 }
 #endif //_DEBUG
 
-
 // CAcupunctureArmv3Doc commands
