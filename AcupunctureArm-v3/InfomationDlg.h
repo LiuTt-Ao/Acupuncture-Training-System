@@ -6,6 +6,8 @@
 #include "ChartClass\ChartLegend.h"
 
 // CInfomationDlg dialog
+//神经网络算法参数赋值
+
 
 class CInfomationDlg : public CDialogEx
 {
@@ -26,7 +28,28 @@ public:
 	CChartLineSerie* m_pLineSerie6;
 	double time;
 	CString str[5][3];
-	int num = 0;
+
+	double n_data[5][2];
+	//神经网络输入数组
+	double arr_force0[6];
+	double arr_force1[6];
+	double arr_force2[6];
+	double arr_force3[6];
+	double arr_force4[6];
+	void renew_array();//数组更新函数
+	int jb[5];
+
+	static const int  innode = 6;      //输入结点数
+	static const int  hidenode = 4;    //隐含结点数
+	static const int  outnode = 3;     //输出结点数
+
+	double result0[outnode];
+	double result1[outnode];
+	double result2[outnode];
+	double result3[outnode];
+	double result4[outnode];
+
+	double* recognize(double *p);
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
@@ -42,4 +65,5 @@ public:
 	afx_msg void OnBnClickedButtonExportData();
 	afx_msg void OnBnClickedButtonImportData();
 	afx_msg void OnPaint();
+	//afx_msg void OnBnClickedRadioUp();
 };

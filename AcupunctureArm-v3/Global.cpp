@@ -23,31 +23,6 @@ double CGlobal::kalman_r = 0.0;
 double CGlobal::kalman_p = 0.0;
 double CGlobal::kalman_gain = 0.0;
 
-//神经网络算法参数赋值
-const int  innode = 6;       //输入结点数
-const int  hidenode = 4;    //隐含结点数
-const int  outnode = 3;     //输出结点数
-
-//隐含结点权值
-double w_hide[innode][hidenode] = { 12.1173, -6.4072, -1.44907, -9.86228,
-1.64972, -2.01997, -3.06478, -5.45661,
-7.24468, -0.62819, -1.99527, 0.107522,
-20.7301, -5.38325, -11.244, -7.04914,
-17.5022, -7.85717, -0.554172, -6.02311,
-13.273, -6.78725, -0.497668, -4.13597 };
-
-//输出结点权值
-double w_out[hidenode][outnode] = { 11.7393,4.82232,-17.3816,
-18.0415,-28.0022,3.63444,
--9.58769,1.49593,21.7807,
--17.6815,31.0677,-13.9477 };
-
-//隐含层阀值
-double b1[hidenode] = { 9.24491, -0.857766, 4.79399, 2.10829 };
-//输出层阈值
-double b2[outnode] = { -3.21151, -9.17268, -2.33308 };
-double result[outnode] = { 0.0 };
-
 
 CGlobal::CGlobal()
 {
@@ -163,38 +138,5 @@ int CGlobal::minIndex(double a[], int size)
 	return minIndex;
 }
 
-double* CGlobal::recognize(double *p)
-{
-	static double x[innode];       //输入向量
-	static double out1[hidenode];  //隐含结点状态值
-	static double out2[outnode];   //输出结点状态值
-	static double net1[hidenode];  //隐含层激活值
-	static double net2[hidenode];  //输出层激活值
 
-	int i, j, k;
-	for (i = 0; i<innode; i++)
-		x[i] = p[i];
-
-	for (j = 0; j<hidenode; j++)
-	{
-		net1[j] = 0.0;
-		for (i = 0; i<innode; i++)
-			net1[j] = net1[j] + w_hide[i][j] * x[i];         //隐含层各单元激活值
-		out1[j] = 1.0 / (1.0 + exp(-net1[j] - b1[j]));  //隐含层各单元输出
-	}
-
-	for (k = 0; k<outnode; k++)
-	{
-		net2[k] = 0.0;
-		for (j = 0; j<hidenode; j++)
-			net2[k] = net2[k] + w_out[j][k] * out1[j];     //输出层各单元激活值
-		out2[k] = 1.0 / (1.0 + exp(-net2[k] - b2[k]));  //输出层各单元输出
-	}
-
-	for (k = 0; k<outnode; k++)
-	{
-		result[k] = out2[k];
-	}
-	return result;
-}
 

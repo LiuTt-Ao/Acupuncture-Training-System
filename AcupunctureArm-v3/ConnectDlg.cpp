@@ -118,8 +118,6 @@ UINT recv_thd(LPVOID p)
 	CString dataStr[5];
 	double offset[5] = { 0.0 };
 	double slide_filter_data[5][5] = { 0.0 };
-
-	//double force_arr[5][2] = {0.0};
 	double force_data[5][3] = { 0.0 };
 	double vel_data[5][2] = { 0.0 };
 	while (1)
@@ -137,7 +135,7 @@ UINT recv_thd(LPVOID p)
 			msg[res] = '\0';
 			CGlobal::hex_to_str(hex_msg, msg);
 
-			if (js==0 && hex_msg[1]=='f' && hex_msg[2]=='e' && hex_msg[4]=='0' && hex_msg[5]=='4' && hex_msg[7]=='1' && hex_msg[8]=='0')
+			if (js == 0 && hex_msg[1] == 'f' && hex_msg[2] == 'e' && hex_msg[4] == '0' && hex_msg[5] == '4' && hex_msg[7] == '1' && hex_msg[8] == '0')
 			{
 				for (int i = 0; i < 48; i++)
 				{
@@ -173,7 +171,7 @@ UINT recv_thd(LPVOID p)
 						slide_filter_data[j][2] = slide_filter_data[j][3];
 						slide_filter_data[j][3] = slide_filter_data[j][4];
 						slide_filter_data[j][4] = CGlobal::force[j];
-						//						CGlobal::force[j] = CGlobal::slide_average_filter(slide_filter_data[j], 5);
+						//CGlobal::force[j] = CGlobal::slide_average_filter(slide_filter_data[j], 5);
 						int m = CGlobal::maxIndex(slide_filter_data[j], 5);
 						int n = CGlobal::minIndex(slide_filter_data[j], 5);
 						CGlobal::force[j] = (slide_filter_data[j][0] + slide_filter_data[j][1] + slide_filter_data[j][2] + slide_filter_data[j][3] + slide_filter_data[j][4] - slide_filter_data[j][m] - slide_filter_data[j][n]) / 3.0;
@@ -182,15 +180,14 @@ UINT recv_thd(LPVOID p)
 
 					for (int k = 0; k < 5; k++)
 					{
-
 						force_data[k][0] = force_data[k][1];
 						force_data[k][1] = force_data[k][2];
 						force_data[k][2] = CGlobal::force[k];
 
-						
+						vel_data[k][0] = (force_data[k][1] - force_data[k][0]) / (CGlobal::interval / 1000.0);
+						vel_data[k][1] = (force_data[k][2] - force_data[k][1]) / (CGlobal::interval / 1000.0);
 
-						CGlobal::velocity[k] = vel_data[k][0] ;
-						CGlobal::velocity2[k] = vel_data[k][1] ;
+						CGlobal::velocity[k] = (vel_data[k][0] + vel_data[k][1]) / 2.0;
 						CGlobal::acceleration[k] = (vel_data[k][1] - vel_data[k][0]) / (CGlobal::interval / 1000.0);
 					}
 
@@ -233,7 +230,6 @@ UINT send_thd(LPVOID p)
 			}
 		}
 	}
-
 	return 0;
 }
 
